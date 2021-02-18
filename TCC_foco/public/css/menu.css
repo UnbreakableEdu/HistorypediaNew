@@ -1,0 +1,63 @@
+.container header{
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.container header .menu a:hover {
+    color: bisque;
+}
+.container header a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-shadow: 1px 1px #FF4F0B;
+    transition: .2s;
+  }
+
+.container header a#log-in {
+    color: #FF4F0B;
+    text-shadow: .7px .7px bisque;
+  }
+
+  .container header button#log-in {
+    background: transparent;
+    border: 3px solid #FF4F0B;
+    border-radius: 16px;
+    transition: .2s;
+    cursor: pointer;
+  }
+
+  .container header button#log-in:hover {
+    background-color: bisque;
+    border: 3px solid #FF4F0B;
+  }
+
+  .container header a#sign-up {
+    color: #ffffff;
+    text-shadow: .7px .7px #FF4F0B;
+  }
+
+
+  .container header button#sign-up {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%), #FF4F0B;
+    border-radius: 16px;
+    border: 3px solid bisque;
+    transition: .2s;
+    cursor: pointer;
+  }
+
+  .container header button#sign-up:hover {
+    background-color: bisque;
+    border: 3px solid #FF4F0B;
+  }
+  .container header a#sign-up:hover {
+      color: #FF4F0B;
+      
+  }

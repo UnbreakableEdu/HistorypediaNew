@@ -1,0 +1,139 @@
+body {
+  outline: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background: #333333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-main {
+  width: 70rem;
+  height: 100%;
+  max-height: 40rem;
+  overflow: hidden;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://1.bp.blogspot.com/-Owr_ak4PrDM/WXU1mjJBz7I/AAAAAAAAD1g/G02ktIeyqa4XP387pw3bGl3aL6OeBHxSwCLcBGAs/s1600/tenochtitlan-1.jpg);
+  background-size: 100%;
+  border-radius: 10px;
+  box-shadow: 3px 3px 20px 3px rgba(0, 0, 0, 0.75);
+}
+
+form {
+  width: 35rem;
+  height: 100%;
+  float: right;
+
+  background: rgba(255, 255, 253, 0.9);
+
+  border: none;
+
+  overflow: hidden;
+}
+
+fieldset {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  border: none;
+
+  margin: 2rem;
+}
+
+fieldset legend {
+  width: 100%;
+  margin-bottom: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+fieldset legend a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: black;
+  text-decoration: none;
+}
+
+fieldset legend span {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+  font-size: 2.4rem;
+  color: #ff4f0b;
+  text-shadow: 2px 2px gray;
+  text-decoration: none;
+}
+
+.input-block + .input-block {
+  margin-top: 1.5rem;
+}
+.input-block {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 0.8rem;
+  line-height: 1.5;
+}
+
+.input-block .input-email{
+  margin-top: 4rem;
+}
+
+.input-block .input-password{
+  margin-bottom: 4rem;
+}
+.input-block input {
+  font-size: 1.1rem;
+  width: 95%;
+  height: 2rem;
+
+  padding: 0.4rem;
+  border-radius: 0.8rem;
+  border: 0.2rem solid #58565b;
+}
+
+
+.primary-button {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+
+  width: 100%;
+  height: 3.4rem;
+  border: 0;
+
+  cursor: pointer;
+
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.6) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #ff4f0b;
+
+  border-radius: 0.8rem;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 0.2s;
+}
+
+.primary-button:hover {
+  background: bisque;
+  color: black;
+  border: 3px solid black;
+}

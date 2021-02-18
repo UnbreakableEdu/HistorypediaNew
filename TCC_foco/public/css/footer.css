@@ -1,0 +1,31 @@
+footer {
+  width: 100%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), #FF4F0B;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  font-family: 'Source Sans Pro', 'sans-serif';
+
+}
+footer img{
+    align-self: flex-end;
+    margin-left: 4rem;
+}
+
+footer p{
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 2px 2px black;
+}
+
+footer p a{
+    text-decoration: none;
+    color: white;
+}

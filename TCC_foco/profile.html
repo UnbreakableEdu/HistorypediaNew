@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Historypedia</title>
+  
+  <link rel="stylesheet" href="public/css/menu.css" />
+  <link rel="stylesheet" href="public/css/main.css" />
+  <link rel="stylesheet" href="public/css/profile-page.css" />
+  <link rel="stylesheet" href="public/css/footer.css" />
+  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;500;400;600;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img id="logo" src="" alt="Logotipo de Historypedia" />
+      <div class="menu">
+        <a href="index.php" id="home">Home</a>
+        <a href="discovery.php" id="descobertas">Descobertas</a>
+        <a href="civilization.php" id="civilizacao">Civilização</a>
+        <a href="chronology.php" id="cronologia">Cronologia</a>
+        <a href="exercises.php" id="exercicios">Exercícios</a>
+        <a href="contact-us.php" id="faleconosco">Fale Conosco</a>
+      </div>
+      <div id="buttons">
+        <button type="button" id="profile" class="button-hover">
+          <a href="profile.php" id="profile" class="a-hover">Meu perfil</a>
+        </button>
+        <button type="button" id="config" class="button-hover">
+          <a onclick="toggleModalVisibility()" id="config" class="a-hover"><img src="public/images/gear.svg" alt="Engrenagem"></a>
+        </button>
+      </div>
+    </header>
+
+    <section id="profile-modal">
+      <header>
+        <h1>Edição de perfil</h1>
+        <strong>Edite as informações de sua conta.</strong>
+      </header>
+  
+      <form action="update.php" method="post">
+        <div class="input-block">
+          <label for="name">Como deseja ser chamado?</label>
+          <input type="text" id="name" name="name"/></br>
+        </div>
+        
+        <div class="input-block">
+          <label for=email>Novo e-mail</label>
+          <input type="email" id="email" name="email"/></br>
+        </div>
+            
+        <div class="input-block">
+          <label for=senha>Nova senha</label>
+          <input type="password" id="senha" name="senha"/></br>
+        </div>
+  
+        <input type="submit"/>
+      </form>
+    </section>
+
+    <main>
+      <div class="profile-id">
+        <div class="profile-pic">
+          <img src="" alt="">
+        </div>
+        <div class="profile-name">
+          <h1>
+            EduKof
+          </h1>
+        </div>
+      </div>
+    </main>
+  </div>
+  <main id="feed">
+    <section id="list">
+      <header>
+        <h1>Exercícios de fixação (concluídos)</h1>
+        <a href="#">
+          Ver todas &nbsp; &rarr;
+        </a>
+      </header>
+      
+      <div>
+        <div class="item">
+          <img src="public/images/teste.jpg" alt="Item para teste" />
+          
+          <h1>Questões sobre o Brasil colonial</h1>
+          
+          <a href="#">Responder &nbsp; &rarr;</a>
+        </div>
+        
+        <div class="item">
+          <img src="public/images/teste.jpg" alt="Item para teste" />
+          
+          <h1>Questões sobre o Brasil colonial</h1>
+          
+          <a href="#">Responder &nbsp; &rarr;</a>
+        </div>
+        
+        <div class="item">
+          <img src="public/images/teste.jpg" alt="Item para teste" />
+          
+          <h1>Questões sobre o Brasil colonial</h1>
+          
+          <a href="#">Responder &nbsp; &rarr;</a>
+        </div>
+      </div>
+    </section>
+    
+    <aside id="side-bar">
+      <span>
+        <h1>Listas concluídas (hoje):</h1>
+        <strong>0</strong>
+      </span>
+      <span>
+        <h1>Taxa de questões certas:</h1>
+        <strong>0%</strong>
+      </span>
+      <span>
+        <h1>Questões para revisar:</h1>
+        <strong>0</strong>
+      </span>
+    </aside>
+    
+    <section id="list">
+      <header>
+        <h1>Exercícios de fixação (concluídos)</h1>
+        <a href="#">
+          Ver todas &nbsp; &rarr;
+        </a>
+      </header>
+      
+      <div>
+        <div class="item">
+          <img src="public/images/teste.jpg" alt="Item para teste" />
+          
+          <h1>Questões sobre o Brasil colonial</h1>
+          
+          <a href="#">Responder &nbsp; &rarr;</a>
+        </div>
+        
+        <div class="item">
+          <img src="public/images/teste.jpg" alt="Item para teste" />
+          
+          <h1>Questões sobre o Brasil colonial</h1>
+          
+          <a href="#">Responder &nbsp; &rarr;</a>
+        </div>
+        
+        <div class="item">
+          <img src="public/images/teste.jpg" alt="Item para teste" />
+          
+          <h1>Questões sobre o Brasil colonial</h1>
+          
+          <a href="#">Responder &nbsp; &rarr;</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script type="text/javascript">
+    const modal = document.getElementById('profile-modal')
+    modal.style.display = 'none'
+
+    function toggleModalVisibility() {
+      if (modal.style.display === 'none') {
+        modal.style.display = 'flex'
+      } else {
+        modal.style.display = 'none'
+      }
+    }
+  </script>
+</body>
+</html>
+  

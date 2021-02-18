@@ -1,0 +1,319 @@
+
+
+body {
+  background: #333;
+}
+
+#profile-modal {
+  position: absolute;
+  right: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -1.6rem;
+  padding: 0 1.6rem 1.6rem 1.6rem;
+  border-radius: .8rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  animation-name: fade;
+  animation-duration: .5s;
+  animation-timing-function: ease-in;
+}
+
+@keyframes fade {
+  from
+  {
+    opacity: 0;
+  }
+  to
+  {
+    opacity: 1;
+  }
+}
+
+#profile-modal header {
+  display: flex;
+  flex-direction: column;
+}
+
+#profile-modal header h1 {
+  font: 700 2rem 'Source Sans Pro';
+  line-height: 3.2rem;
+}
+
+#profile-modal header strong {
+  font: 500 1.2rem 'Source Sans Pro';
+  line-height: 2rem;
+  color: #333;
+}
+
+#profile-modal form {
+  width: 100%;
+}
+
+#profile-modal form > input {
+  width: 100%;
+  margin-top: .8rem;
+  padding: .8rem 0;
+  border: 3px solid #ff4f0b;
+  border-radius: .8rem;
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.6) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #ff4f0b;
+  font: 700 1.2rem 'Source Sans Pro';
+  color: #FFF;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#profile-modal form > input:hover {
+  background-color: bisque;
+  border: 3px solid #000;
+  color: #000;
+}
+
+#profile-modal form .input-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-block + .input-block {
+  margin-top: -.8rem;
+}
+
+.input-block label {
+  font: 600 1rem 'Source Sans Pro';
+  line-height: 1.6rem;
+  color: #333;
+}
+
+.input-block input {
+  height: 3rem;
+  padding: 0 .8rem;
+  border: 2px solid rgb(167, 167, 167);
+  border-radius: .8rem;
+  font: 500 1rem 'Source Sans Pro';
+  color: #333;
+  transition: border 0.3s;
+}
+
+.input-block input:focus {
+  border: 4px solid #ff4f0b;
+}
+
+.container {
+  position: relative;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
+    url(https://viagenseoutrashistorias.com.br/wp-content/uploads/2019/07/misterios-ilha-de-pascoa-15.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  height: 90vh;
+}
+
+.container header button#config {
+  background: rgba(255, 255, 255, 0.2);
+  border: 3px solid #ff4f0b;
+  border-radius: 16px;
+  transition: 0.2s;
+  cursor: pointer;
+  height: 3.55rem;
+  opacity: 0.9;
+}
+.container header button#config img {
+  height: 1.6rem;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.container header button#config:hover {
+  background-color: bisque;
+  border: 3px solid #ff4f0b;
+}
+
+.container header a#profile {
+  color: #ffffff;
+  text-shadow: 0.7px 0.7px #ff4f0b;
+}
+
+.container header button#profile {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.6) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #ff4f0b;
+  border-radius: 16px;
+  border: 3px solid bisque;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.container header button#profile:hover {
+  background-color: bisque;
+  border: 3px solid #ff4f0b;
+}
+.container header a#profile:hover {
+  color: #ff4f0b;
+}
+
+.profile-id {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: justify;
+    margin-left: 6rem;
+    margin-top: 16rem;
+}
+
+.profile-id .profile-pic {
+    height: 16rem;
+    width: 16rem;
+    background: transparent;
+    border: .2rem solid #333333;
+    border-radius: .2rem;
+    box-shadow: 1px 1px #ff4f0b;
+}
+
+.profile-id .profile-pic img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.profile-id .profile-name{
+    font-family: "Source Sans Pro", "sans-serif";
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: rgba(255, 255, 255, 0.85);
+    text-shadow: 1px 1px #ff4f0b;
+    margin-left:2rem;
+    margin-top: 10rem;
+}
+
+#feed {
+  width: 90vw;
+  max-width: 1100px;
+  margin: 3.6rem auto;
+  display: grid;
+  grid-template-columns: 6fr 2fr;
+}
+
+#feed #list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#list header {
+  width: 100%;
+  padding: 1.6rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#list header h1 {
+  font: 700 1.6rem 'Source Sans Pro';
+  line-height: 3.2rem;
+  color: #FFF;
+}
+
+#list header a {
+  font: 500 1.2rem 'Source Sans Pro';
+  font-weight: bold;
+  line-height: 2.4rem;
+  text-decoration: none;
+  color: #FF4F0B;
+  transition: opacity .3s;
+}
+
+#list header a:hover {
+  opacity: .6;
+}
+
+#list div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+}
+
+#list div .item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  border: 0;
+  border-radius: .8rem;
+  background: rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+.item img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.item h1 {
+  margin: -.8rem 0 1.2rem 0;
+  padding: 0 .8rem;
+  font: 600 1.4rem 'Source Sans Pro';
+  line-height: 2.4rem;
+  color: #FFF;
+  
+}
+
+.item a {
+  padding: .8rem;
+  font: 600 1rem 'Source Sans Pro';
+  line-height: 2.4rem;
+  text-decoration: none;
+  color: #FF4F0B;
+  transition: opacity .3s;
+}
+
+.item a:hover {
+  opacity: .6;
+}
+
+#feed #side-bar {
+  height: 100%;
+  margin-left: 4rem;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: .8rem;
+}
+
+#side-bar span {
+  width: 100%;
+  height: 100%;
+  padding: .8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: .2rem solid #FFF;
+  border-radius: .8rem;
+}
+
+#side-bar span h1 {
+  font: 600 1.4rem 'Source Sans Pro';
+  line-height: 1.8rem;
+  text-align: center;
+  color: #FFF;
+}
+
+#side-bar span strong {
+  font: 500 1.4rem 'Source Sans Pro';
+  line-height: 1.6rem;
+  color: #BBBBBB;
+}
